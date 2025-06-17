@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Calendar, FileText, Users, MapPin, Scale, Signature } from 'lucide-react';
 
 function App() {
-  const [currentDate] = useState(new Date().toLocaleDateString('en-US', { 
+  const [currentDate] = useState(new Date().toLocaleDateString('de-DE', { 
     year: 'numeric', 
     month: 'long', 
     day: 'numeric' 
@@ -18,8 +18,8 @@ function App() {
               <Scale className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-slate-800">Legal Document</h1>
-              <p className="text-slate-600">Prenuptial Agreement</p>
+              <h1 className="text-2xl font-bold text-slate-800">Rechtsdokument</h1>
+              <p className="text-slate-600">Ehevertrag</p>
             </div>
           </div>
         </div>
@@ -31,10 +31,10 @@ function App() {
           {/* Document Header */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-8 text-center">
             <FileText className="h-12 w-12 mx-auto mb-4 opacity-90" />
-            <h1 className="text-3xl font-bold mb-2">PRENUPTIAL AGREEMENT</h1>
+            <h1 className="text-3xl font-bold mb-2">EHEVERTRAG</h1>
             <div className="flex items-center justify-center gap-2 text-blue-100">
               <Calendar className="h-4 w-4" />
-              <span>Executed on {currentDate}</span>
+              <span>Ausgeführt am {currentDate}</span>
             </div>
           </div>
 
@@ -43,8 +43,8 @@ function App() {
             {/* Introduction */}
             <div className="prose max-w-none">
               <p className="text-lg leading-relaxed text-slate-700">
-                This Prenuptial Agreement is made and entered into on this{' '}
-                <span className="font-semibold text-blue-600">{currentDate}</span>, by and between:
+                Dieser Ehevertrag wird am{' '}
+                <span className="font-semibold text-blue-600">{currentDate}</span> geschlossen zwischen den folgenden Parteien:
               </p>
             </div>
 
@@ -56,21 +56,21 @@ function App() {
                   <div className="bg-blue-100 p-2 rounded-full">
                     <Users className="h-5 w-5 text-blue-600" />
                   </div>
-                  <h3 className="font-semibold text-slate-800">Party 1</h3>
+                  <h3 className="font-semibold text-slate-800">Partei 1</h3>
                 </div>
                 <div className="space-y-3">
                   <div>
-                    <label className="block text-sm font-medium text-slate-600 mb-1">Full Legal Name</label>
+                    <label className="block text-sm font-medium text-slate-600 mb-1">Vollständiger rechtlicher Name</label>
                     <p className="text-slate-800 font-medium">Nikolaus Krawutschke</p>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-600 mb-1">Address</label>
+                    <label className="block text-sm font-medium text-slate-600 mb-1">Adresse</label>
                     <div className="flex items-start gap-2">
                       <MapPin className="h-4 w-4 text-slate-400 mt-1 flex-shrink-0" />
                       <p className="text-slate-700">
                         Damaschkestr. 49<br />
                         Karlsruhe, Baden-Württemberg<br />
-                        76133 Germany
+                        76133 Deutschland
                       </p>
                     </div>
                   </div>
@@ -83,21 +83,21 @@ function App() {
                   <div className="bg-blue-100 p-2 rounded-full">
                     <Users className="h-5 w-5 text-blue-600" />
                   </div>
-                  <h3 className="font-semibold text-slate-800">Party 2</h3>
+                  <h3 className="font-semibold text-slate-800">Partei 2</h3>
                 </div>
                 <div className="space-y-3">
                   <div>
-                    <label className="block text-sm font-medium text-slate-600 mb-1">Full Legal Name</label>
+                    <label className="block text-sm font-medium text-slate-600 mb-1">Vollständiger rechtlicher Name</label>
                     <p className="text-slate-800 font-medium">Tiffany Dawson</p>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-slate-600 mb-1">Address</label>
+                    <label className="block text-sm font-medium text-slate-600 mb-1">Adresse</label>
                     <div className="flex items-start gap-2">
                       <MapPin className="h-4 w-4 text-slate-400 mt-1 flex-shrink-0" />
                       <p className="text-slate-700">
                         13140 S Rhodes Ave<br />
                         Chicago, Illinois<br />
-                        60827 United States
+                        60827 Vereinigte Staaten
                       </p>
                     </div>
                   </div>
@@ -111,82 +111,82 @@ function App() {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Scale className="h-5 w-5 text-blue-600" />
                 </div>
-                RECITALS
+                PRÄAMBEL
               </h2>
               <div className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  <strong>WHEREAS,</strong> the Parties contemplate legal marriage in the near future and intend by this Agreement to define their respective financial and property rights during the marriage, in the event of separation, divorce, or death;
+                  <strong>IN ANBETRACHT DESSEN,</strong> dass die Parteien eine rechtliche Ehe in naher Zukunft beabsichtigen und mit diesem Vertrag ihre jeweiligen finanziellen und vermögensrechtlichen Ansprüche während der Ehe sowie im Falle einer Trennung, Scheidung oder des Todes regeln wollen;
                 </p>
                 <p>
-                  <strong>WHEREAS,</strong> both Parties acknowledge they are entering into this Agreement freely, voluntarily, and with full disclosure of all assets and liabilities;
+                  <strong>IN ANBETRACHT DESSEN,</strong> dass beide Parteien bestätigen, diesen Vertrag frei, freiwillig und mit vollständiger Offenlegung aller Vermögenswerte und Verbindlichkeiten abzuschließen;
                 </p>
                 <p>
-                  <strong>NOW, THEREFORE,</strong> in consideration of the mutual promises and covenants herein contained and intending to be legally bound, the Parties agree as follows:
+                  <strong>JETZT, DANN,</strong> in Anbetracht der gegenseitigen Versprechen und Vereinbarungen in diesem Vertrag und mit der Absicht, rechtlich gebunden zu sein, vereinbaren die Parteien Folgendes:
                 </p>
               </div>
             </div>
 
             {/* Terms Section */}
             <div className="border-t border-slate-200 pt-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-6">TERMS AND CONDITIONS</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6">BEDINGUNGEN UND VEREINBARUNGEN</h2>
               <div className="space-y-6">
                 {/* Term 1 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    1. Disclosure of Assets and Liabilities
+                    1. Offenlegung von Vermögenswerten und Verbindlichkeiten
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Each Party affirms that prior to the execution of this Agreement, they have provided a fair and reasonable disclosure of all financial obligations, assets, income, and liabilities.
+                    Jede Partei bestätigt, dass sie vor der Ausführung dieses Vertrags eine faire und angemessene Offenlegung aller finanziellen Verpflichtungen, Vermögenswerte, Einkünfte und Verbindlichkeiten vorgenommen hat.
                   </p>
                 </div>
 
                 {/* Term 2 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    2. Separate Property
+                    2. Getrenntes Eigentum
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    All property, whether real, personal, tangible, or intangible, currently owned or acquired in the future by either Party individually, and any income or proceeds derived therefrom, shall remain the sole and separate property of that Party unless otherwise agreed to in writing.
+                    Alle Vermögenswerte, ob real, persönlich, materiell oder immateriell, die derzeit im alleinigen Eigentum einer Partei stehen oder in Zukunft erworben werden, sowie alle daraus resultierenden Einkünfte oder Erträge, bleiben alleiniges und getrenntes Eigentum dieser Partei, sofern nicht schriftlich anders vereinbart.
                   </p>
                 </div>
 
                 {/* Term 3 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    3. Joint Property
+                    3. Gemeinsames Eigentum
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Property jointly acquired during the marriage shall be considered marital property, unless designated otherwise, and shall be subject to equitable distribution in accordance with applicable law.
+                    Während der Ehe gemeinsam erworbenes Eigentum gilt als eheliches Vermögen, sofern nicht anders bestimmt, und unterliegt einer gerechten Verteilung gemäß geltendem Recht.
                   </p>
                 </div>
 
                 {/* Term 4 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    4. Spousal Support
+                    4. Ehegattenunterhalt
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Each Party waives any right to spousal support or alimony from the other Party, except as may be specifically provided for in a separate written agreement.
+                    Jede Partei verzichtet auf jegliche Ansprüche auf Ehegattenunterhalt oder Alimente von der anderen Partei, außer es wird ausdrücklich in einer separaten schriftlichen Vereinbarung geregelt.
                   </p>
                 </div>
 
                 {/* Term 5 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    5. Estate Rights
+                    5. Erbrechte
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    Each Party waives all rights in the estate of the other Party that might otherwise arise by reason of the marriage, including but not limited to rights of inheritance, dower, curtesy, and intestate succession.
+                    Jede Partei verzichtet auf alle Rechte am Nachlass der anderen Partei, die sich aus der Ehe ergeben könnten, einschließlich, aber nicht beschränkt auf Erbansprüche, Witwen- oder Witwerrenten und gesetzliche Erbfolge.
                   </p>
                 </div>
 
                 {/* Term 6 */}
                 <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-lg p-6 border border-slate-100">
                   <h3 className="text-lg font-semibold text-slate-800 mb-3">
-                    6. Governing Law
+                    6. Anwendbares Recht
                   </h3>
                   <p className="text-slate-700 leading-relaxed">
-                    This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the marriage takes place.
+                    Dieser Vertrag unterliegt den Gesetzen der Gerichtsbarkeit, in der die Ehe geschlossen wird, und ist entsprechend auszulegen.
                   </p>
                 </div>
               </div>
@@ -198,48 +198,48 @@ function App() {
                 <div className="bg-blue-100 p-2 rounded-lg">
                   <Signature className="h-5 w-5 text-blue-600" />
                 </div>
-                SIGNATURES
+                UNTERSCHRIFTEN
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 {/* Party 1 Signature */}
                 <div className="space-y-4">
                   <div className="border-b-2 border-slate-300 pb-2">
-                    <p className="text-sm text-slate-600 mb-8">Signature of Nikolaus Krawutschke</p>
+                    <p className="text-sm text-slate-600 mb-8">Unterschrift von Nikolaus Krawutschke</p>
                   </div>
                   <div className="text-sm text-slate-600">
-                    Date: _________________
+                    Datum: _________________
                   </div>
                 </div>
 
                 {/* Party 2 Signature */}
                 <div className="space-y-4">
                   <div className="border-b-2 border-slate-300 pb-2">
-                    <p className="text-sm text-slate-600 mb-8">Signature of Tiffany Dawson</p>
+                    <p className="text-sm text-slate-600 mb-8">Unterschrift von Tiffany Dawson</p>
                   </div>
                   <div className="text-sm text-slate-600">
-                    Date: _________________
+                    Datum: _________________
                   </div>
                 </div>
               </div>
 
               {/* Notary Section */}
               <div className="mt-8 bg-amber-50 border border-amber-200 rounded-lg p-6">
-                <h3 className="font-semibold text-amber-800 mb-4">Notarization</h3>
+                <h3 className="font-semibold text-amber-800 mb-4">Notarielle Beglaubigung</h3>
                 <div className="space-y-4 text-sm text-amber-700">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <p>Notary Public: _________________</p>
+                      <p>Notar: _________________</p>
                     </div>
                     <div>
-                      <p>Commission Expires: _________________</p>
+                      <p>Gültigkeitsdauer der Kommission: _________________</p>
                     </div>
                   </div>
                   <div className="border-t border-amber-200 pt-4">
                     <p className="text-xs text-amber-600">
-                      State of _________________, County of _________________
+                      Bundesland _________________, Landkreis _________________
                     </p>
                     <div className="mt-4 border-b border-amber-300 pb-2">
-                      <p className="text-xs text-amber-600 mb-6">Notary Seal and Signature</p>
+                      <p className="text-xs text-amber-600 mb-6">Notarsiegel und Unterschrift</p>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ function App() {
             <div className="border-t border-slate-200 pt-8">
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                 <p className="text-sm text-red-700">
-                  <strong>Important Legal Notice:</strong> This document is a template and should be reviewed by qualified legal counsel before execution. Laws vary by jurisdiction, and this agreement may not be valid or enforceable without proper legal review and compliance with local requirements.
+                  <strong>Wichtiger rechtlicher Hinweis:</strong> Dieses Dokument ist eine Vorlage und sollte vor der Ausführung von qualifiziertem Rechtsbeistand überprüft werden. Die Gesetze variieren je nach Gerichtsbarkeit, und dieser Vertrag ist möglicherweise ohne ordnungsgemäße rechtliche Prüfung und Einhaltung der lokalen Anforderungen nicht gültig oder durchsetzbar.
                 </p>
               </div>
             </div>
@@ -260,7 +260,7 @@ function App() {
 
       {/* Footer */}
       <div className="text-center py-8 text-slate-500 text-sm">
-        <p>This document was generated on {currentDate}</p>
+        <p>Dieses Dokument wurde erstellt am {currentDate}</p>
       </div>
     </div>
   );
